@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: un4cus
+
+  datasource:
+    url: jdbc:mysql://localhost:3806/userdbun4cus?createDatabaseIfNotExist=true&useLegacyDatetimeCode=false
+    username: root
+    password: 12345
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+server:
+  port: 6060
